@@ -22,7 +22,21 @@
 }
 .header {
   background:#0B0000;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.box {
   height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+  width: 100%;
+  border: solid 1px black;
+  text-align: center;
+}
+.box_forweather {
+  
 }
 h1 {
   margin: 0;

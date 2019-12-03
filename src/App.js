@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../src/containers/Home/index';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 class Home extends PureComponent{
     constructor(props){
         super(props);
@@ -18,8 +19,18 @@ class Home extends PureComponent{
         const{hi}=this.state;
     return( <div>
     <Header/>
-    <div className ="box_forweather" onClick={()=>this.redirect()}>
-        mars 7 day forcast</div>
+    <div className="container">
+        <div className="row">
+            <div className="col-lg-6">
+                <div className="box_forweather box" onClick={()=>this.redirect()}>See 7 Day Forecast</div>
+            </div>
+            <div className="col-lg-6"></div>
+        </div>
+        <div className="row">
+            <div className="col-lg-6"></div>
+            <div className="col-lg-6"></div>
+        </div>
+    </div>
     </div>
     );
     }

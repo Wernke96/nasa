@@ -26,7 +26,21 @@ class MarsWeather extends PureComponent{
     }
 
     render(){
-        return(<div><Header/><h2>Mars page</h2></div>);
+        return( <div>
+                    <Header/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-6"></div>
+                            <div className="col-lg-6"></div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-6"></div>
+                            <div className="col-lg-6"></div>
+                        </div>
+                    </div>
+                    <h2>Mars page</h2>
+                </div>
+                );
     }
 }
 export default MarsWeather;
