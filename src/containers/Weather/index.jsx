@@ -8,12 +8,7 @@ import { withRouter } from 'react-router';
 
     const MarsWeather = ({}) => (
 
-        <div><Header/> <Weather/>
-
-<<<<<<< HEAD
-    render(){
-        return( <div>
-                    <Header/>
+        <div><Header/>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6"></div>
@@ -25,14 +20,11 @@ import { withRouter } from 'react-router';
                         </div>
                     </div>
                     <h2>Mars page</h2>
-                </div>
-                );
-    }
-}
-export default MarsWeather;
-=======
+            <Weather/>
 
-            </div>);
+        </div>
+                );
+
+
 
 export default withRouter(MarsWeather);
->>>>>>> feature/weather

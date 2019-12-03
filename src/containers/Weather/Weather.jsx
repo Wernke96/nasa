@@ -22,18 +22,40 @@ class Weather extends PureComponent{
             .then(res => res.json())
             .then(d => {
                 let list = Object.keys(d);
-                for(let i = 0; i<= 2; i++ ){
-                    switch(i){
+                for(let i = 0; i<= 6; i++ ){
+                    switch(i) {
                         case 0:
                             console.log(d[list[i]])
-                            this.setState({forCast: [...this.state.forCast, d[list[i]]] });
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
                             break;
                         case 1:
                             console.log(d[list[i]])
-                            this.setState({forCast:[...this.state.forCast , d[list[i]]] });
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
                             break;
-                    }
 
+                        case 2:
+                            console.log(d[list[i]])
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
+                            break;
+                        case 3:
+                            console.log(d[list[i]])
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
+                            break;
+                        case 4:
+                            console.log(d[list[i]])
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
+                            break;
+                        case 5:
+                            console.log(d[list[i]])
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
+                            break;
+                        case 6:
+                            console.log(d[list[i]])
+                            this.setState({forCast: [...this.state.forCast, d[list[i]]]});
+                            break;
+
+
+                    }
                 }
             } );
         console.log(this.state.forCast);
