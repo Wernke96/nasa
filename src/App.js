@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import Header from '../src/containers/Home/index'
+import './App.css'
+class Home extends PureComponent{
+    constructor(props){
+        super(props);
+        this.state={ };
+    }
+     redirect(){
+        let currentURL = this.props.location.pathname;
+        // save them in local storage when you click into an order details page, this way you can go back easily
+        localStorage.setItem('url', currentURL);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        this.props.history.push('/weather');
+    }
+    render(){
+        const{hi}=this.state;
+    return( <div>
+    <Header/>
+    <div className ="box_forweather" onClick={()=>this.redirect()}>
+        mars 7 day forcast</div>
     </div>
-  );
+    );
+    }
+    
 }
-
-export default App;
+export default Home;

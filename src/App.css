@@ -20,3 +20,20 @@
 .App-link {
   color: #09d3ac;
 }
+.header {
+  background:#0B0000;
+  height: 80px;
+}
+h1 {
+  margin: 0;
+  line-height: 80px;
+  color: white;
+}
+#filter {
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 40px;
+  margin: 20px 0;
+  border: none;
+}
