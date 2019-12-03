@@ -9,12 +9,12 @@ const routing = (
     <Router>
       <div>
         <Route exact path="/" component={Home} />
-        <Route path="/weather" component={MarsWeather}/>
+        <Route path="/weather" component={MarsWeather} />
 
         
       </div>
     </Router>
-  )
+  );
 
 ReactDOM.render(routing, document.getElementById('root'));
 
