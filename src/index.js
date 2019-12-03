@@ -4,7 +4,7 @@ import './index.css'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import Home from './App';
-import MarsWeather from'./containers/Weather/index'
+import MarsWeather from'./containers/Weather/index';
 const routing = (
     <Router>
       <div>

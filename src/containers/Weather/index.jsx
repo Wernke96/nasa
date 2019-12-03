@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Header from '../Home/index'
-import {getForCast} from '../../function'
+import Header from '../Home/index';
+import {getForCast} from '../../function';
 
 class MarsWeather extends PureComponent{
     constructor(props){

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Header from '../src/containers/Home/index'
-import './App.css'
+import Header from '../src/containers/Home/index';
+import './App.css';
 class Home extends PureComponent{
     constructor(props){
         super(props);
