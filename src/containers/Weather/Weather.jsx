@@ -67,7 +67,7 @@ class Weather extends PureComponent{
         } = this.state
         return(
 
-            <div> <h2>This is the Seven day forcast</h2>{forCast.length > 0 ?
+            <div className="Seven_day"> <h2>This is the Seven day forcast</h2>{forCast.length > 0 ?
                 this.state.forCast.map(wea => (<Day weather={wea}/>)):(<div>none found</div>)}
         </div>);
             }

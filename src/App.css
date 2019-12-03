@@ -32,11 +32,50 @@
   line-height: 80px;
   cursor: pointer;
   width: 100%;
-  border: solid 1px black;
   text-align: center;
 }
 .box_forweather {
+  min-width: 16rem;
+  min-height: 11rem;
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: Roboto !important;
+  font-size: 1.2rem;
+  text-align: center;
+  float: left;
+  box-shadow: 0 0 0 5px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  border-radius: 3px;
+  padding: 0 15px;
+  background: #fff;
   
+}
+.day_forweather {
+  min-width: 16rem;
+  min-height: 11rem;
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: Roboto !important;
+  font-size: 1.0rem;
+  text-align: center;
+  float: left;
+  box-shadow: 0 0 2px 3px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  border-radius: 3px;
+  padding: 0 15px;
+  background: #fff;
+
+}
+.box_forweather:hover {
+  cursor: pointer;
+  background-color: rgba(128,189,255, .5);
+
+}
+
+.day_forweather:hover {
+  cursor: pointer;
+  background-color: #d3d3d3;
+
 }
 h1 {
   margin: 0;

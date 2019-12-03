@@ -2,10 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 const Day = ({weather}) => (
-    <div>Temperature for this day will be 
-        {console.log( weather)}
-<div>High  {weather.AT.mx}</div>
-<div>Low {weather.AT.mn}</div>
+    <div className="day_forweather box" >Temperature for this day will be <br/>
+High  {weather.AT.mx}
+ Low {weather.AT.mn}
     </div> );
 
 Day.prototype ={
